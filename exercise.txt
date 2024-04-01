@@ -31,8 +31,52 @@ Part II
 1. What does the man command do? Type in man rm. How do you scroll and get out?
 	man rm;
 
-Page up or Page down to scroll page, Up or down arrow key to scroll one line at a time.
-	To get out: (q to quit)
+	Movement: <n> can be input into the window before the key is pressed for finer control. 
+	(To get to this window press h or H from the manual page, this is a summary of less commands)
+	1. e or (CTRL + E) or j or (CTRL + N) or CR (Carriage Return or Enter) <n> 
+		to advance forward one or <n> lines.
+	2. y or (CTRL + Y) or k or (CTRL + K) or (CTRL + P) <n> 
+		to advance backward one or <n> lines.
+	3. f or (CTRL + F) or (CTRL + V) or (SPACE) <n> 
+		to advance forward one window or <n> lines.
+	4. b or (CTRL + B) or (ESC + v) <n> 
+		to advance backward one window or <n> lines.
+	5. z <n> 
+		to move forward one window or <n> lines.
+	6. w <n> 
+		to move backward one window or <n> lines.
+	7. ESC + SPACE
+		to move forward one window but don't stop at the End of File.
+	8. d or CTRL + D <n> 
+		to move forward one half-window or <n> lines.
+	9. u or CTRL + U <n> 
+		to move backward one half-window or <n> lines.
+	10. ESC + ) or Right Arrow <n> 
+		to scroll horizonally to the right one position or <n> positions.
+	11. ESC + ( or Left Arrow <n> 
+		to scroll horizontally to the left one position or <n> positions.
+	12. ESC-} or CTRL + Right Arrow
+		Right to last column displayed.
+	13. ESC-{ or CTRL + Left Arrow
+		Left to first column.
+	14. F
+		Forward forever
+	15. ESC + F
+		Like F but stop when search pattern is found.
+	16. r or (CTRL + R) or (CTRL + L)
+		Repaint
+	17. R
+		Repaint and discard any buffered input.
+
+	18. g or (ESC - <)
+		go to first line or line <n>.
+	19. G or ( ESC - >)
+		go to last line or line <n>.
+	20. p or % <n>
+		go to 0% or <n> percentage of file.
+
+	To Exit: q or :q or Q or :Q or ZZ
+		To Exit.
 
 2. Look at the man page for ls. What does the -l flag do? What does the -a flag do?
 	In the man page for ls:
