@@ -2,7 +2,6 @@ Terminal Exercises
 
 Part I
 1. make a directory called first
-	cd ~;
 	mkdir first;
 
 2. change directory to the first folder
@@ -120,6 +119,6 @@ To delete an entire word in the terminal up to the cursor:
 
 11. What do the r and f flags do with the rm command?
 	The r and f flags change the behavior of the rm command.
-		-r flag will enable a recursive deletion of files. Any files and other folders inside a direcotry (if a direcotry is specified) will be deleted.
+		-r flag will enable a recursive deletion of files. Any files and other folders inside a direcotry (if a directory is specified) will be deleted.
 		-f flag forces the command, and will ignore all prompts, including from specific parameters which point to non-existent files or folders.
 
